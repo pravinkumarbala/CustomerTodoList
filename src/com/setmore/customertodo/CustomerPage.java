@@ -40,11 +40,13 @@ public class CustomerPage {
                         break;
                 case 4: System.out.println("Exit from the Customer Todo List");
                         break;
+                case 5: System.out.println("Update User Details");
+                        System.out.println("===================");
+                        uc.updateUserDetail();
+                        break;
                 default: System.out.println("Sorry, Please enter the correct option");
                         break;
             }
-
-
         }while (choice != 4);
     }
 }

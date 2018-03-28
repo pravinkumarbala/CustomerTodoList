@@ -58,7 +58,6 @@ public class TodoList extends TodoListTemplate{
                 case 2: System.out.print("Line Number : ");
                         lineNumber = readInput.nextInt();
                         for (Map.Entry<Integer, TodoListTemplate> list : todoList.entrySet()) {
-                            int listLineNumber = list.getKey();
                             TodoListTemplate todo = list.getValue();
                             if (todo.status.equals(completed)) {
                                 if (lineNumber == list.getKey()) {
